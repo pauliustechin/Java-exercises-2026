@@ -24,7 +24,8 @@ public class Hangman {
                 System.out.print("Enter a letter in word " + hiddenWord + " > ");
                 char guess = scanner.nextLine().charAt(0);
 
-                if(hiddenWord.indexOf(String.valueOf(guess)) == 0){
+                if(hiddenWord.indexOf(String.valueOf(guess)) != -1){
+
                     System.out.println(guess + " is already in a word");
                 } else {
                     boolean found = checkGuess(wordLength, word, hiddenWord, guess);

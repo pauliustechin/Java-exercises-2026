@@ -35,6 +35,7 @@ public class TicTacToe {
 
                 printTable(allPicks);
                 win = checkIfWin(player1Picks);
+
                 if(win){
                     System.out.println("Player 1 wins!");
                     break;
@@ -101,7 +102,9 @@ public class TicTacToe {
         boolean win = false;
 
         for(String[] winPos : winList){
+
             win = true;
+
             for(String pos: winPos){
                 if(!(playerPicks.contains(pos))){
                     win = false;
@@ -137,7 +140,7 @@ public class TicTacToe {
             if(allPicks.indexOf(pick) % 2 == 0){
                 playerChar = "X";
             } else {
-                playerChar = "0";
+                playerChar = "O";
             }
 
             switch (pick){
