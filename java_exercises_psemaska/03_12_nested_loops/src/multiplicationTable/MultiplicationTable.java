@@ -1,32 +1,36 @@
+package multiplicationTable;
+
 public class MultiplicationTable {
-    public static void main(String[] args){
-        // x = kokio dydzio lenta
-        printMultiplicatonTable(5);
+
+    int tableSize;
+
+    public MultiplicationTable(int tableSize){
+        this.tableSize = tableSize;
     }
 
-    public static void printMultiplicatonTable(int x){
+    public void printMultiplicatonTable(){
 
-        int[] nums = new int[x];
+        int[] nums = new int[tableSize];
 
-        for(int i = 0; i < x; i++){
+        for(int i = 0; i < tableSize; i++){
             nums[i] = i+1;
         }
-        printHeader(nums, x);
-        printTable(nums, x);
+        printHeader(nums, tableSize);
+        printTable(nums, tableSize);
     }
 
-    public static void printHeader(int[] nums, int x) {
+    private static void printHeader(int[] nums, int tableSize) {
         System.out.print("    ");
         for (int num : nums) {
             System.out.print(num + "  ");
-            if (num == x) {
+            if (num == tableSize) {
                 System.out.println();
                 System.out.println("------------------------------");
             }
         }
     }
 
-    public static void printTable(int[] nums, int x){
+    private static void printTable(int[] nums, int tableSize){
         for(int num : nums){
             System.out.print(num + " | ");
             for(int num2 : nums){
@@ -36,7 +40,7 @@ public class MultiplicationTable {
                     System.out.print(num2 * num + " ");
                 }
 
-                if(num2 == x){
+                if(num2 == tableSize){
                     System.out.println();
                 }
             }

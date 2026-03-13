@@ -1,12 +1,14 @@
+package square;
+
 public class Square {
 
-    public static void main(String[] args){
+    int squareDimensions;
 
-        printSquare(5);
-
+    public Square(int squareDimensions){
+        this.squareDimensions = squareDimensions;
     }
 
-    public static void printSquare(int squareDimensions){
+    public void printSquare(){
         for(int i = 0; i < squareDimensions; i++){
             if(i == 0 || (i == (squareDimensions-1))){
                 for(int j = 0; j < squareDimensions; j++){
