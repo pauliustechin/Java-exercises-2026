@@ -15,9 +15,5 @@ public class Main {
         System.out.println("acc1 balance:" + balance);
 
         System.out.println("acc2 balance:" + account2.getBalance());
-
-
-
-
     }
 }
