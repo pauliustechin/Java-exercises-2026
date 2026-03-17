@@ -18,10 +18,8 @@ public class Main {
         shapes.add(rectangle);
         System.out.println(rectangle);
 
-        Square square = new Square();
+        Square square = new Square(5);
         shapes.add(square);
-        square.setLength(6);
-        square.setWidth(4);
         System.out.println(square);
 
         Triangle triangle = new Triangle();
