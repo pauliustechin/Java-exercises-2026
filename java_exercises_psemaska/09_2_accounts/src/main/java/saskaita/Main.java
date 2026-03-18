@@ -53,18 +53,7 @@ public class Main {
                 scanner.close();
                 proceed = false;
             }
-
-
         }
-
-
-
-
-
-
-
-
-
     }
 
 }
