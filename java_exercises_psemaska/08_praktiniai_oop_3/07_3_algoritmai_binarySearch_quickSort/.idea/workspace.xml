@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a65fe3d-85f9-483b-bc30-43affacb4fcb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/psem/binarysearch/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psem/binarysearch/BinarySearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psem/quicksort/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psem/quicksort/QuickSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_praktiniai_dubplicate_countingOccurences/src/main/java/dublicate/Dublicate.java" beforeDir="false" />
-    </list>
+    <list default="true" id="5a65fe3d-85f9-483b-bc30-43affacb4fcb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
