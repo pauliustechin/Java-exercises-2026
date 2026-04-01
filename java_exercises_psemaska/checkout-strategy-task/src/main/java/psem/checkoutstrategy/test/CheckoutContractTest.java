@@ -8,9 +8,6 @@ import psem.checkoutstrategy.service.CheckoutComponentFactoryImpl;
 
 public class CheckoutContractTest extends AbstractCheckoutContractTest {
 
-    protected CheckoutContractTest() {
-    }
-
     @Override
     public CheckoutCalculator createCheckoutCalculator() {
         return new CheckoutCalculatorImpl();

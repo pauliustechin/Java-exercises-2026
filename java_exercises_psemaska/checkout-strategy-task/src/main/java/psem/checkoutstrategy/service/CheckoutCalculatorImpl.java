@@ -14,14 +14,16 @@ public class CheckoutCalculatorImpl implements CheckoutCalculator {
     public PriceBreakdown calculate(CheckoutContext checkoutContext, DiscountStrategy discountStrategy, ShippingStrategy shippingStrategy) {
 
         BigDecimal finalTotal = checkoutContext.getItemsSubtotal()
-                .add(shippingStrategy.calculateShipping(checkoutContext))
-                .subtract(discountStrategy.calculateDiscount(checkoutContext));
+                .subtract(discountStrategy.calculateDiscount(checkoutContext))
+                .add(shippingStrategy.calculateShipping(checkoutContext));
 
-        return new PriceBreakdown(
+        PriceBreakdown priceBreakdown = new PriceBreakdown(
                 checkoutContext.getItemsSubtotal(),
                 discountStrategy.calculateDiscount(checkoutContext),
                 shippingStrategy.calculateShipping(checkoutContext),
                 finalTotal
         );
+
+        return priceBreakdown;
     }
 }

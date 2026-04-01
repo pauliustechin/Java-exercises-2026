@@ -38,7 +38,7 @@ public final class OrderItem {
     }
 
     public BigDecimal getLineSubtotal() {
-        return unitPrice.multiply(new BigDecimal(2));
+        return unitPrice.multiply(new BigDecimal(quantity));
     }
 
     @Override
